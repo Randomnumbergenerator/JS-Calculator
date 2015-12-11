@@ -5,48 +5,37 @@
 	<title>Document</title>
 </head>
 <body>
+
+<div class="display" role="display">
 <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">+</button>
-  <button type="button" class="btn btn-default">-</button>
-  <button type="button" class="btn btn-default">/</button>
-  <button type="button" class="btn btn-default">*</button>
-  <button type="button" class="btn btn-default">=</button>
+  <button type="button" class="btn btn-default" NAME="plus" VALUE="  +  " OnClick="Calc.Input.value += ' + '">+</button>
+  <button type="button" class="btn btn-default" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">-</button>
+  <button type="button" class="btn btn-default" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">/</button>
+  <button type="button" class="btn btn-default" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">*</button>
+  <button type="button" class="btn btn-default" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">=</button>
 </div>
 <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">0</button>
-  <button type="button" class="btn btn-default">1</button>
-  <button type="button" class="btn btn-default">2</button>
-  <button type="button" class="btn btn-default">3</button>
-  <button type="button" class="btn btn-default">4</button>
+  <button type="button" class="btn btn-default" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">0</button>
+  <button type="button" class="btn btn-default" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">1</button>
+  <button type="button" class="btn btn-default" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">2</button>
+  <button type="button" class="btn btn-default" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">3</button>
+  <button type="button" class="btn btn-default" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">4</button>
 </div>
 <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">5</button>
-  <button type="button" class="btn btn-default">6</button>
-  <button type="button" class="btn btn-default">7</button>
-  <button type="button" class="btn btn-default">8</button>
-  <button type="button" class="btn btn-default">9</button>
+  <button type="button" class="btn btn-default" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">5</button>
+  <button type="button" class="btn btn-default" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">6</button>
+  <button type="button" class="btn btn-default" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">7</button>
+  <button type="button" class="btn btn-default" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">8</button>
+  <button type="button" class="btn btn-default" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">9</button>
 </div>
-<!-- <form>
-row 1
-<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
-<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
-<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
-row 2
-<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
-row 3
-<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
-<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
-<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
-row 4
-<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
-<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
-<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<div>
+	<button type="button" class="btn btn-default" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">C</button>
+	<button type="button" class="btn btn-default" NAME="decimal" VALUE="  .  " OnClick="Calc.Input.value = ''">.</button>
+	<input type="text" maxlength="20" size="11" name="Display">
+
+	
+</div>
+
 
 </form>
 
@@ -65,7 +54,9 @@ function subtraction()
 function multiplication()
 function division()
 function clearDisplay()
-function numImput() -->
+function numImput()
 	
-</body>
-</html>
+<!-- </body>
+</html> 
+
+ 
